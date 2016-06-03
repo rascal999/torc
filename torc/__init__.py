@@ -483,7 +483,7 @@ def main():
     #context.load_cert_chain(os.path.dirname(os.path.abspath(__file__)) + "/keys/cert.crt", \
     #                        os.path.dirname(os.path.abspath(__file__)) + "/keys/key.pem")
 
-    if os.path.isfile('/.dockerinit'):
+    if os.path.isfile('/.dockerenv'):
         print("Running in docker")
         #app.run(host='0.0.0.0',debug=True,threaded=True,ssl_context=context)
         app.run(host='0.0.0.0',debug=True,threaded=True)
